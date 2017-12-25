@@ -1,0 +1,95 @@
+.icon{
+    display: block;
+    //background-color: red;
+    color: #c9c9c9;
+    padding:10px;
+    font-size: 1rem;
+    // &:hover  {
+    //     color: white;
+    //     background-color: black;
+    // }
+    
+}
+
+a.link {
+    &--icon {
+        display: block;
+        //width: 25%;
+        padding: 1em;
+        color: #c9c9c9;
+        //background: red;
+        
+    }
+    
+}
+
+.codepen,.twitter,.instagram,.linkedin{
+    transition: all 0.4s;
+     & .svg-inline--fa {
+         font-size: 2em;
+     }
+}
+
+.codepen{
+    &:hover {
+        color: white;
+        background: #111111;
+    }
+    
+    &::before{
+        display: none;
+        font-family: "Font Awesome 5 Brands";
+        content: "\f1cb";
+        & .svg-inline--fa {
+            font-size: 2em;
+        }
+    }
+}
+.twitter{
+    &:hover {
+        color: white;
+        background: #00A4EE;
+    }
+   
+    &::before {
+        display: none;
+        font-family: "Font Awesome 5 Brands";
+        content: "\f099";
+        & .svg-inline--fa {
+            font-size: 2em;
+        }
+    }
+
+}
+
+
+
+.instagram{
+    &:hover {
+        color: white;
+        background: #E93373;
+    }
+    &::before {
+        display: none;
+        font-family: "Font Awesome 5 Brands";
+        content: "\f16d";
+        & .svg-inline--fa {
+            font-size: 2em;
+        }
+    }
+}
+
+.linkedin{
+    &:hover {
+        color: white;
+        background: #0077B5;
+    }
+    &::before {
+        display: none;
+        font-family: "Font Awesome 5 Brands";
+        content: "\f0e1";
+        & .svg-inline--fa {
+            font-size: 2em;
+        }
+    }
+}

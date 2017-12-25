@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<div class="container--gradient" id="parent">
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -9" />
+      </filter>
+    </defs>
+  </svg>
+  <canvas id="canvas"></canvas>
+
+</div>
+
+<div class="container--block">
+  <div class="inner-block">
+    <h1>Daniel Gonzalez</h1>
+    <h2>Front-End Developer</h2>
+
+    <p class="typewriter">A new amazing website is coming soon. </p>
+
+    <div class="btn--container">
+      <a href="" class="btn">About Me</a>
+      <button href="" class="btn btn--gradient" id="myBtn">Get In Touch</button>
+    </div>
+
+    <div class="container--icon">
+      <a href="https://codepen.io/dan10gc/" target="_blank" alt="Codepen Profile" class="link--icon codepen">
+      </a>
+      <a href="https://www.instagram.com/dan10gc/?hl=en" target="_blank" alt="Instagram Profile" class="link--icon instagram">
+      </a>
+      <a href="https://twitter.com/Dan10GC" target="_blank" alt="Twitter Profile" class="link--icon twitter">
+      </a>
+      <a href="#" target="_blank" alt="LinkedIn Profile" class="link--icon linkedin">
+      </a>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+  
+  {{ content }}
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>

@@ -1,0 +1,46 @@
+.button{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 10px;
+    border-radius: 3px;
+    margin: auto;
+    width: 150px;
+    margin-top: 20px;
+}
+.btn{
+    //display: block;
+   
+    text-decoration: none;
+    border: solid 3px $color-primary;
+    padding: 10px 20px;
+    width: auto;
+    font-size: 0.85rem;
+    font-weight: $font-weight--bold;
+    text-transform: uppercase;
+     transition: all 0.4s;
+     @include mq(tablet) {
+          margin-right: 1rem;
+          font-size: 1.125rem;
+     }
+     @include mq(desktop) {
+          font-weight: $font-weight--medium;
+         font-size: 1.125rem;
+     }
+    &:hover{
+        background-color: $color-primary;
+        color: white;
+    }
+    &--gradient{
+        background: linear-gradient(45deg, $color-primary, $color-secondary);
+        border: none;
+        padding: 13px 23px;
+        color: white;
+        &:hover {
+            background: $color-primary;
+            color: white;
+        }
+    }
+}

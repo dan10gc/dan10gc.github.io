@@ -1,0 +1,114 @@
+//==============
+// Global config
+//==============
+
+// Font Stacks
+$font-url-google: 'https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i';
+
+$font-family--primary: 'Lato', sans-serif;
+
+//Font Weights
+
+$font-weight--thin   : 300;
+$font-weight--medium : 400;
+$font-weight--bold   : 700;
+
+//Descriptive Base Colors
+$rolling-stone    : #797e83;
+$cod-gray         : #111;
+$bitter-sweet     : #fe6f5e;
+$flamingo         : #EF4836;
+$white            : #fff;
+$mine-shaft       : #333;
+$alizarin         : rgba(231, 76, 60,1.0);
+$downy            : #65C6BB;
+$niagara          : #0AB88D;
+$java             : #20b1c8;
+$tundora          : #4C4C4C;
+$porcelain        : #ebeced;
+$fountain-blue    : #52BAB3;
+$caribbean-green  : #00CC99;
+$silver           : #C9C9C9;
+$picton-blue      : #52B6E5;
+$coral            : #FF8349;
+$belize-hole      : rgba(41, 128, 185,1.0);
+$blue-ribbon      : #0066ff;
+$peter-river      : #3498db;
+$turquoise        : #1abc9c;
+$clouds           : #ecf0f1;
+$carrot           : #e67e22;
+$emerald          : #2ecc71;
+$orange           : #f39c12;
+$wet-asphalt      : #34495e;
+$purple           : #6701BE;
+$pink             : #FF00BA;
+
+
+//Color Usage
+
+$color-primary   :$purple;
+$color-secondary :$pink;
+$color-terciary  :$picton-blue;
+$color-cancel    :$flamingo;
+$color-black     :$cod-gray;
+$color-white     :$white;
+$color-link      :$rolling-stone;
+$color-form      :$fountain-blue;
+$color-text      :$mine-shaft;
+
+// color Palette modiffiers
+
+$palettes: (
+  grey: (
+    xx-light: lighten($silver,43%),
+    x-light: lighten($silver,35%),
+    light: lighten($silver,12%),
+    base: $silver,
+    dark: darken($silver,8%),
+    x-dark: darken($silver,16%),
+  ),
+  black: (
+    light : lighten($color-black, 10%),
+    base  : $color-black,
+    dark  : darken($color-black,10%),
+  )
+);
+
+//UI-Colors
+
+$ui-colors: (
+  default  : $picton-blue,
+  success  : $caribbean-green,
+  bookmark : $bitter-sweet,
+  cancel   : $color-cancel,
+
+);
+
+//Text
+
+$base__font-size: 16px;
+$base__line: 24px;
+
+
+// Path to Assets
+
+$path--rel    : "../img";
+
+// Border radius
+
+$br--default: 3px;
+
+// Padding for Containers
+
+$padding-default: 10px;
+
+// Transitions
+
+$trns-duration  : .3s;
+
+//Breakpoints for Media Queries
+
+$brkpoint-xs     :1px;
+$brkpoint-sm     :416px;
+$brkpoint-md     :767px;
+$brkpoint-lg     :1024px;

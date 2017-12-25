@@ -1,0 +1,168 @@
+///******************
+//Site text
+//********************
+
+.white-text{
+    color: $color-white;
+}
+
+.logo-header  {
+    margin: 0 auto;
+    letter-spacing: 0.2em;
+    display: inline-block;
+    text-align: center;
+    a {
+        color: $white;
+        font-weight: 300;
+        font-size: em(10px);
+    }
+    @include mq(desktop){
+        margin-left: em(20px);
+    }
+}
+
+.headline{
+    &--sub{
+        font-size: 1.125rem;
+        font-weight: $font-weight--medium;
+        margin: 0;
+        color: $color-primary;
+        @include mq(tablet) {
+            font-size: 1.75rem;
+        }
+    }
+    
+}
+
+.text-white{
+    color: $white;
+}
+
+.main-headline {
+  font-weight: $font-weight--thin;
+  // font-size: 2em;
+  text-align: center;
+  // letter-spacing: 0.1em;
+ padding-top: 10px;
+}
+
+.sub-headline {
+    text-align: center;
+    color: $cod-gray;
+    font-weight: $font-weight--thin;
+    letter-spacing: 0.1em;
+}
+
+.portfolio-headline{
+    @extend .main-headline;
+    text-align: left;
+
+}
+
+.small-print {
+    font-size: em(12px);
+    color: $rolling-stone;
+    text-align: center;
+}
+
+.contact-span {
+    color: $color-black;
+    // text-align: center;
+}
+
+.portfolio-text{
+    color: $rolling-stone;
+    font-weight: $font-weight--thin;
+    ul {
+        list-style-type: square;
+    }
+}
+
+.overlay{
+    @include e(header){
+        font-weight: $font-weight--thin;
+        color: $rolling-stone;
+        opacity: 1;
+        font-size: em(24px);
+        margin: 0;
+        text-align: center;
+        @include mq(desktop){
+            line-height: 1;
+            font-size: em(24px);
+            color: $white;
+            border-bottom: solid 2px $white;
+        }
+
+    }
+    @include e(text){
+        display: none;
+        font-weight: $font-weight--medium;
+        color: $color-black;
+        opacity: 1;
+        text-align: center;
+        font-size: em(12px);
+        @include mq(desktop){
+            font-size: em(16px);
+            color: $white;
+        }
+    }
+}//end overlay
+
+
+//text-align center (indivually align text when necessary)
+.text-center{
+    text-align: center;
+}
+
+.typewriter {
+   overflow: hidden;
+   /* Ensures the content is not revealed until the animation */
+
+   border-right: .15em solid $color-primary;
+   /* The typwriter cursor */
+
+   white-space: nowrap;
+   /* Keeps the content on a single line */
+
+   //margin: 10px auto;
+   /* Gives that scrolling effect as the typing happens */
+
+   //letter-spacing: .15em;
+   /* Adjust as needed */
+
+   animation : typing 4.5s steps(40, end),
+   blink-caret .75s step-end infinite;
+
+   @include mq(tablet){
+        //max-width: 85%;
+   }
+   @include mq(desktop) {
+       max-width: 65%;
+   }
+
+   
+}
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: $color-primary;
+    }
+}
