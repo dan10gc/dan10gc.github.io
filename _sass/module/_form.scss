@@ -1,0 +1,31 @@
+#mc_embeded_signup{
+    background: $purple;
+    color: $white;
+}
+
+//label
+label {
+    color: $white;
+}
+
+.indicates-required{
+    color: $white;
+}
+
+//inputs
+#mc_embed_signup input{
+    border-radius: 0;
+}
+
+//button
+#mc-embedded-subscribe.button{
+    background-color: $white;
+    color: $purple;
+    border-radius: 0;
+   
+}
+#mc-embedded-subscribe.button:hover{
+    opacity: 1;
+    background-color: $pink;
+    color: $white;
+}
