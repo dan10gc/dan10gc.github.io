@@ -1,6 +1,17 @@
-<!-- <footer class="site-footer">
+<footer class="site-footer">
+  <div class="md-col-8 col-12 mx-auto">
+    <span>&copy; {{ site.time | date: '%Y' }}
+      {% if site.author %} 
+        <a href="mailto:{{ site.email }}" >{{site.author}}</a>
+      {% else %} 
+        <a href="mailto:{{ site.email }}" >{{site.title}}</a>
+      {% endif %}
+      
+    </span>
+ 
+  </div>
 
-  <div class="wrapper">
+  <!-- <div class="wrapper">
 
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
@@ -41,6 +52,6 @@
       </div>
     </div>
 
-  </div>
+  </div> -->
 
-</footer> -->
+</footer>
