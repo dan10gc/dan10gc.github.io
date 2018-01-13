@@ -12,8 +12,9 @@
 }
 .btn{
     //display: block;
-   
+    color: $purple;
     text-decoration: none;
+    outline: none;
     border: solid 3px $color-primary;
     padding: 10px 20px;
     width: auto;
