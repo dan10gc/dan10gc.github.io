@@ -10,3 +10,13 @@
     width:300px;
     margin-left: auto;
 }
+.svg{
+    &--aurea{
+        width: 100%;
+        @include mq(desktop){
+             //width: 250%;
+        }
+       
+    }
+    
+}
