@@ -17,9 +17,7 @@ author: Daniel Gonzalez
 title: Daniel Gonzalez Front-End Developer
 email: dan@danielgc.design
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I am Front-end Developer with 3 years of experience. I primarly focus on Javascript(ES5/6, node and browser), HTML5, and CSS3(SCSS). I enjoy learning new Javascript/CSS frameworks and libraries. I have experice developing in ReactJS, VueJS, D3JS, Bootstrap, Bulma.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://danielgc.design" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dan10gc 
