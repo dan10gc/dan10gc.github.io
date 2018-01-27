@@ -17,6 +17,12 @@ label {
     border-radius: 0;
 }
 
+#mc_embed_signup input.email {
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 2px solid $purple;
+}
+
 //button
 #mc-embedded-subscribe.button{
     background-color: $white;

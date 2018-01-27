@@ -50,10 +50,11 @@
         color: $white;
         text-decoration: none;
         outline: none;
+        border: none;
         //border: solid 3px $color-primary;
-        padding: 10px 20px;
+        padding: 12px 24px;
         width: auto;
-        font-size: 0.85rem;
+        font-size: 1rem;
         font-weight: $font-weight--medium;
         text-transform: uppercase;
         transition: all 0.4s;
