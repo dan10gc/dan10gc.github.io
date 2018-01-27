@@ -15,8 +15,10 @@
     color: $purple;
     text-decoration: none;
     outline: none;
+    background-color: white;
     border: solid 3px $color-primary;
     padding: 10px 20px;
+    margin-right: 0.5rem;
     width: auto;
     font-size: 0.85rem;
     font-weight: $font-weight--medium;
@@ -51,8 +53,8 @@
         text-decoration: none;
         outline: none;
         border: none;
-        //border: solid 3px $color-primary;
-        padding: 12px 24px;
+        border: solid 3px $color-primary;
+        padding: 10px 46px;
         width: auto;
         font-size: 1rem;
         font-weight: $font-weight--medium;
@@ -72,7 +74,7 @@
             background-color: $white;
             //font-weight: $font-weight--bold;
             color: $color-primary;
-            border: solid 2px $color-primary;
+            border: solid 3px $color-primary;
         }
     }
 }
