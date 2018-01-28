@@ -12,10 +12,6 @@ label {
     color: $white;
 }
 
-//inputs
-// #mc_embed_signup input{
-//     border-radius: 0;
-// }
 
 #mc_embed_signup input.email {
     padding: 20px;
@@ -24,15 +20,3 @@ label {
     border-radius: 0;
 }
 
-//button
-#mc-embedded-subscribe.button{
-    background-color: $white;
-    color: $purple;
-    border-radius: 0;
-   
-}
-#mc-embedded-subscribe.button:hover{
-    opacity: 1;
-    background-color: $pink;
-    color: $white;
-}
