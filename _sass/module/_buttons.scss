@@ -24,6 +24,7 @@
     font-weight: $font-weight--medium;
     text-transform: uppercase;
      transition: all 0.4s;
+     letter-spacing: .125rem;
      @include mq(tablet) {
           margin-right: 1rem;
           font-size: 1.125rem;
