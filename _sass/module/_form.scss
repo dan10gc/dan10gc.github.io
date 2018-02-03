@@ -19,7 +19,8 @@ label {
     border-radius: 0;
     &:focus{
         background-color: $color-primary;
-        color: $color-white;
+        color: white;
+        //border: red;
         //border:3px solid $color-secondary;
     }
 }
