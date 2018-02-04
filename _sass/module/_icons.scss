@@ -93,3 +93,68 @@ a.link {
         }
     }
 }
+
+//styles for 3d social media icons
+
+.cube {
+    margin: auto;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 2s ease; //animation: rotate 1s backwards;
+    &:hover {
+        transform: rotateX(180deg) rotateY(720deg); // animation: rotate 1s ease-in;
+        // animation-direction: alternate;
+    }
+}
+
+.side {
+    position: absolute;
+    width: 200px;
+    height: 200px; //background-color: rgba(186,31,51,0.3);
+    //background-color: white;
+    //border: 3px solid rgb(186,31,51);
+    text-transform: uppercase;
+    text-align: center;
+    & h1 {
+        vertical-align: middle;
+        line-height: 400px;
+        color: white;
+    }
+    &.back {
+        transform: translateZ(-100px) rotateX(180deg);
+    }
+    &.left {
+        transform: translateX(-100px) rotateY(-90deg);
+    }
+    &.right {
+        transform: translateX(100px) rotateY(90deg);
+    }
+    &.front {
+        transform: translateZ(100px)
+    }
+    &.top {
+        transform: translateY(-100x) rotateX(90deg);
+    }
+    &.bottom {
+        transform: translateY(100px) rotateX(90deg);
+    }
+    .icon {
+        margin: 30% auto;
+        vertical-align: middle;
+        font-size: 84px;
+    }
+    &.grey {
+        color: #777;
+        background-color: white;
+    }
+    &.black {
+        color: white;
+        background-color: #111;
+    }
+    &.twitter {
+        color: white;
+        background-color: #0084b4;
+    }
+}
