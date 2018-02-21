@@ -1,6 +1,7 @@
 const canvas = document.getElementById("canvas"),
-    parent = document.getElementById("parent",)
-    context = canvas.getContext("2d"),
+    parent = document.getElementById("parent"),
+    //turning off transparency
+    context = canvas.getContext("2d",{ alpha: false }),
     colorPallete = ["#ff1783", "#6701BE", "#558DFC", "#FFD23F", "#5EFC8D"];
 
 let width = canvas.width = parent.offsetWidth,
