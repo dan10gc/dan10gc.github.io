@@ -38,8 +38,9 @@ class Ball {
 
 //end constructor
 
-loop();
-function loop() {
+draw();
+function draw() {
+    (height !== innerHeight || width !==innerWidth) && (width=context.width=innerWidth,height=context.height=innerHeight);
     context.clearRect(0, 0, width, height);
     if (count === randomCount) {
         balls.push(new Ball());
@@ -62,7 +63,7 @@ function loop() {
     context.fill();
 
     removeBall();
-    requestAnimationFrame(loop);
+    requestAnimationFrame(draw);
 }
 
 function removeBall() {
